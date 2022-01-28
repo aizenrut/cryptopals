@@ -19,7 +19,7 @@ public class SingleByteXor
     };
     
 
-    public static (string Message, char XoredByte) Run(string hex)
+    public static (char XoredByte, double Score, string Message) Run(string hex)
     {
         var hexBytes = Convert.FromHexString(hex);
 
@@ -42,8 +42,6 @@ public class SingleByteXor
             message.Clear();
         }
 
-        var winner = scores.MaxBy(x => x.Score);
-
-        return (winner.Message, winner.XoredByte);
+        return scores.MaxBy(x => x.Score);
     }
 }

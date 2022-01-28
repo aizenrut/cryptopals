@@ -12,7 +12,7 @@ public class Set1Tests
         
         var base64 = HexToBase64.Run(hex);
         
-        Assert.Equal("SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t", base64, ignoreCase: true);
+        Assert.Equal("SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t", base64);
     }
 
     [Fact]
@@ -31,9 +31,19 @@ public class Set1Tests
     {
         var hex = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736";
         
-        var (message, xoredByte) = SingleByteXor.Run(hex);
+        var (xoredByte, _, message) = SingleByteXor.Run(hex);
         
-        Assert.Equal("Cooking MC's like a pound of bacon", message, ignoreCase: true);
+        Assert.Equal("Cooking MC's like a pound of bacon", message);
         Assert.Equal('X', xoredByte);
+    }
+    
+    [Fact]
+    public void SingleCharacterXorTest()
+    {
+        var (line, xoredByte, message) = SingleCharacterXor.Run();
+
+        Assert.Equal("7b5a4215415d544115415d5015455447414c155c46155f4058455c5b523f", line);
+        Assert.Equal('5', xoredByte);
+        Assert.Equal("Now that the party is jumping\n", message);
     }
 }
