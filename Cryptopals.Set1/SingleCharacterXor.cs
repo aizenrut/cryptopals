@@ -6,7 +6,7 @@ public class SingleCharacterXor
     {
         var winners = new List<(string Line, char XoredByte, double Score, string Message)>();
         
-        using (var reader = File.OpenText("4.txt"))
+        using (var reader = File.OpenText("Data/4.txt"))
         {
             string line;
             while ((line = reader.ReadLine()) != null)
