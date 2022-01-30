@@ -241,4 +241,12 @@ public class Set1Tests
         
         Assert.Equal(expectedOutput, Encoding.ASCII.GetString(result));
     }
+
+    [Fact]
+    public static void DetectAesInEcbModeTest()
+    {
+        var line = DetectAesInEcbMode.Run();
+        
+        Assert.Equal(133, line.Value);
+    }
 }
