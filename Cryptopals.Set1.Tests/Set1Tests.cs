@@ -249,4 +249,12 @@ public class Set1Tests
         
         Assert.Equal(133, line.Value);
     }
+    
+    [Fact]
+    public static void Tes()
+    {
+        var bytes = new byte[] {72};
+
+        var a = Convert.ToHexString(bytes);
+    }
 }

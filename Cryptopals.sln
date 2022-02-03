@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptopals.Set1", "Cryptopa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptopals.Set1.Tests", "Cryptopals.Set1.Tests\Cryptopals.Set1.Tests.csproj", "{E20C6DE5-F291-48D6-820C-296E7E960667}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptopals.Set2", "Cryptopals.Set2\Cryptopals.Set2.csproj", "{9670AF2A-5CEA-4429-9D88-1AF007759613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptopals.Set2.Tests", "Cryptopals.Set2.Tests\Cryptopals.Set2.Tests.csproj", "{E6697A46-0062-4A73-AA69-EF20FBB392F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{E20C6DE5-F291-48D6-820C-296E7E960667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E20C6DE5-F291-48D6-820C-296E7E960667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E20C6DE5-F291-48D6-820C-296E7E960667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9670AF2A-5CEA-4429-9D88-1AF007759613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9670AF2A-5CEA-4429-9D88-1AF007759613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9670AF2A-5CEA-4429-9D88-1AF007759613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9670AF2A-5CEA-4429-9D88-1AF007759613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6697A46-0062-4A73-AA69-EF20FBB392F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6697A46-0062-4A73-AA69-EF20FBB392F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6697A46-0062-4A73-AA69-EF20FBB392F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6697A46-0062-4A73-AA69-EF20FBB392F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
